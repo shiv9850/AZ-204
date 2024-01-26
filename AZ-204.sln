@@ -3,11 +3,36 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmosDB", "CosmosDB\CosmosDB.csproj", "{292709D7-6701-40AA-9E82-E32368323F6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CosmosDB", "CosmosDB\CosmosDB.csproj", "{292709D7-6701-40AA-9E82-E32368323F6B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Storage", "Storage", "{F5F8EDCA-5F00-4FD6-8F57-9C9E8AF375FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlobStorage", "BlobStorage\BlobStorage.csproj", "{5B7E6C8C-ECAB-453A-B0D2-B0EB3FCEA5B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlobStorage", "BlobStorage\BlobStorage.csproj", "{5B7E6C8C-ECAB-453A-B0D2-B0EB3FCEA5B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3PartyServices", "3PartyServices", "{3E3EF213-801E-4636-98A1-54106AA3B8D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceBusQueue", "ServiceBusQueue", "{BF151410-653B-4899-B9B4-4561B431DD9E}"
+	ProjectSection(SolutionItems) = preProject
+		CreateSeviceBusQueue.ps = CreateSeviceBusQueue.ps
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusQueue", "ServiceBusQueue\ServiceBusQueue.csproj", "{B3621FEF-DE4A-491A-B076-C7E7AD455B07}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StorageQueue", "StorageQueue", "{ABCD6AC9-1443-44D4-8CF1-22C3CFC7F5AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageQueue", "StorageQueue\StorageQueue.csproj", "{EB991D21-AD50-41B0-9984-601AC3D17ED9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chache", "Chache", "{2C13C733-A9A9-487E-8F00-16C2CE1F920C}"
+	ProjectSection(SolutionItems) = preProject
+		CreateChache.ps = CreateChache.ps
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisChache", "RedisChache\RedisChache.csproj", "{FBFC770E-F418-4A48-910B-6A0388A35172}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiManagement", "ApiManagement", "{34F5D596-9119-4964-8BAC-7B5C08958C43}"
+	ProjectSection(SolutionItems) = preProject
+		CreateApiMangement.ps = CreateApiMangement.ps
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +48,18 @@ Global
 		{5B7E6C8C-ECAB-453A-B0D2-B0EB3FCEA5B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B7E6C8C-ECAB-453A-B0D2-B0EB3FCEA5B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B7E6C8C-ECAB-453A-B0D2-B0EB3FCEA5B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3621FEF-DE4A-491A-B076-C7E7AD455B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3621FEF-DE4A-491A-B076-C7E7AD455B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3621FEF-DE4A-491A-B076-C7E7AD455B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3621FEF-DE4A-491A-B076-C7E7AD455B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB991D21-AD50-41B0-9984-601AC3D17ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB991D21-AD50-41B0-9984-601AC3D17ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB991D21-AD50-41B0-9984-601AC3D17ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB991D21-AD50-41B0-9984-601AC3D17ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBFC770E-F418-4A48-910B-6A0388A35172}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBFC770E-F418-4A48-910B-6A0388A35172}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBFC770E-F418-4A48-910B-6A0388A35172}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBFC770E-F418-4A48-910B-6A0388A35172}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +67,13 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{292709D7-6701-40AA-9E82-E32368323F6B} = {F5F8EDCA-5F00-4FD6-8F57-9C9E8AF375FA}
 		{5B7E6C8C-ECAB-453A-B0D2-B0EB3FCEA5B4} = {F5F8EDCA-5F00-4FD6-8F57-9C9E8AF375FA}
+		{BF151410-653B-4899-B9B4-4561B431DD9E} = {3E3EF213-801E-4636-98A1-54106AA3B8D7}
+		{B3621FEF-DE4A-491A-B076-C7E7AD455B07} = {BF151410-653B-4899-B9B4-4561B431DD9E}
+		{ABCD6AC9-1443-44D4-8CF1-22C3CFC7F5AC} = {3E3EF213-801E-4636-98A1-54106AA3B8D7}
+		{EB991D21-AD50-41B0-9984-601AC3D17ED9} = {ABCD6AC9-1443-44D4-8CF1-22C3CFC7F5AC}
+		{2C13C733-A9A9-487E-8F00-16C2CE1F920C} = {3E3EF213-801E-4636-98A1-54106AA3B8D7}
+		{FBFC770E-F418-4A48-910B-6A0388A35172} = {2C13C733-A9A9-487E-8F00-16C2CE1F920C}
+		{34F5D596-9119-4964-8BAC-7B5C08958C43} = {3E3EF213-801E-4636-98A1-54106AA3B8D7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {94BB9CA2-4D0A-48E6-B454-B5FAE6A4024F}
