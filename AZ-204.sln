@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3PartyServices", "3PartySer
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ServiceBusQueue", "ServiceBusQueue", "{BF151410-653B-4899-B9B4-4561B431DD9E}"
 	ProjectSection(SolutionItems) = preProject
-		CreateSeviceBusQueue.ps = CreateSeviceBusQueue.ps
+		CreateSeviceBusQueue.sh = CreateSeviceBusQueue.sh
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceBusQueue", "ServiceBusQueue\ServiceBusQueue.csproj", "{B3621FEF-DE4A-491A-B076-C7E7AD455B07}"
@@ -22,16 +22,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StorageQueue", "StorageQueu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StorageQueue", "StorageQueue\StorageQueue.csproj", "{EB991D21-AD50-41B0-9984-601AC3D17ED9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Chache", "Chache", "{2C13C733-A9A9-487E-8F00-16C2CE1F920C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cache", "Cache", "{2C13C733-A9A9-487E-8F00-16C2CE1F920C}"
 	ProjectSection(SolutionItems) = preProject
-		CreateChache.ps = CreateChache.ps
+		CreateCache.sh = CreateCache.sh
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisChache", "RedisChache\RedisChache.csproj", "{FBFC770E-F418-4A48-910B-6A0388A35172}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisCache", "RedisChache\RedisCache.csproj", "{FBFC770E-F418-4A48-910B-6A0388A35172}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiManagement", "ApiManagement", "{34F5D596-9119-4964-8BAC-7B5C08958C43}"
 	ProjectSection(SolutionItems) = preProject
-		CreateApiMangement.ps = CreateApiMangement.ps
+		CreateApiMangement.sh = CreateApiMangement.sh
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Compute", "Compute", "{3F801AF3-D7F4-4A4C-AE1C-65933C43E7F2}"

@@ -1,6 +1,6 @@
 ﻿using StackExchange.Redis;
 
-namespace RedisChache
+namespace RedisCache
 {
     internal class Program
     {
@@ -8,9 +8,9 @@ namespace RedisChache
         {
             string connectionString = "REDIS_CONNECTION_STRING";
 
-            using (var chache = ConnectionMultiplexer.Connect(connectionString))
+            using (var cache = ConnectionMultiplexer.Connect(connectionString))
             {
-                IDatabase db =   chache.GetDatabase();
+                IDatabase db =   cache.GetDatabase();
 
                 //ping-pong
                 var result = await db.ExecuteAsync("ping");

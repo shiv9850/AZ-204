@@ -1,8 +1,8 @@
 #REDIS CHACHE
 #location Name , Resource Group Name 
 myLocation=westus2
-myGroup = az204-redis-rg
-redisName= az204-redis-$RANDOM
+myGroup=az204-redis-rg
+redisName=az204-redis-$RANDOM
 
 
 az group create \

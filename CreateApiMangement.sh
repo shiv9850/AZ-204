@@ -2,8 +2,8 @@
 
 #location Name , Resource Group Name , EmailId,API name
 myLocation=westus2
-myGroup = az204-apim-rg
-myEmail=rajewar.shivdas@gmail.com
+myGroup=az204-apim-rg
+myEmail=<your email>
 myApiName=az204-apim-$RANDOM
 
 #----------------------------------------------------
