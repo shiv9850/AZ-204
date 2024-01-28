@@ -34,6 +34,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiManagement", "ApiManagem
 		CreateApiMangement.ps = CreateApiMangement.ps
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Compute", "Compute", "{3F801AF3-D7F4-4A4C-AE1C-65933C43E7F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functions", "Functions", "{A414459D-393D-41D5-AE71-3BC4E582378E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpFunctionExample", "HttpFunctionExample\HttpFunctionExample.csproj", "{A3881660-B71A-4C75-AE87-B0C958EB74EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -60,6 +66,10 @@ Global
 		{FBFC770E-F418-4A48-910B-6A0388A35172}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FBFC770E-F418-4A48-910B-6A0388A35172}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FBFC770E-F418-4A48-910B-6A0388A35172}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3881660-B71A-4C75-AE87-B0C958EB74EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3881660-B71A-4C75-AE87-B0C958EB74EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3881660-B71A-4C75-AE87-B0C958EB74EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3881660-B71A-4C75-AE87-B0C958EB74EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -74,6 +84,8 @@ Global
 		{2C13C733-A9A9-487E-8F00-16C2CE1F920C} = {3E3EF213-801E-4636-98A1-54106AA3B8D7}
 		{FBFC770E-F418-4A48-910B-6A0388A35172} = {2C13C733-A9A9-487E-8F00-16C2CE1F920C}
 		{34F5D596-9119-4964-8BAC-7B5C08958C43} = {3E3EF213-801E-4636-98A1-54106AA3B8D7}
+		{A414459D-393D-41D5-AE71-3BC4E582378E} = {3F801AF3-D7F4-4A4C-AE1C-65933C43E7F2}
+		{A3881660-B71A-4C75-AE87-B0C958EB74EC} = {A414459D-393D-41D5-AE71-3BC4E582378E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {94BB9CA2-4D0A-48E6-B454-B5FAE6A4024F}
